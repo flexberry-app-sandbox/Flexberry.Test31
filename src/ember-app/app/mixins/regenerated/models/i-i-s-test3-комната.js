@@ -2,6 +2,7 @@ import Mixin from '@ember/object/mixin';
 import $ from 'jquery';
 import DS from 'ember-data';
 import { validator } from 'ember-cp-validations';
+import { attr, belongsTo, hasMany } from 'ember-flexberry-data/utils/attributes';
 
 export let Model = Mixin.create({
   id: DS.attr('number'),
@@ -31,4 +32,18 @@ export let ValidationRules = {
       validator('number', { allowString: true, allowBlank: true, integer: true }),
     ],
   },
+};
+
+export let defineProjections = function (modelClass) {
+  modelClass.defineProjection('КомнатаE', 'i-i-s-test3-комната', {
+    номерКомнаты: attr('Номер комнаты', { index: 0 }),
+    этаж: attr('Этаж', { index: 1 }),
+    id: attr('Id', { index: 2 })
+  });
+
+  modelClass.defineProjection('КомнатаL', 'i-i-s-test3-комната', {
+    номерКомнаты: attr('Номер комнаты', { index: 0 }),
+    этаж: attr('Этаж', { index: 1 }),
+    id: attr('Id', { index: 2 })
+  });
 };

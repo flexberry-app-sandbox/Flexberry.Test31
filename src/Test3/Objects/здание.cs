@@ -21,7 +21,7 @@ namespace IIS.Test3
 
 
     /// <summary>
-    /// здание.
+    /// Здание.
     /// </summary>
     // *** Start programmer edit section *** (здание CustomAttributes)
 
@@ -29,6 +29,19 @@ namespace IIS.Test3
     [AutoAltered()]
     [Caption("Здание")]
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
+    [View("зданиеE", new string[] {
+            "Улица as \'Улица\'",
+            "НомерДома as \'Номер дома\'",
+            "КоличествоЭтаж as \'Количество этаж\'",
+            "Город as \'Город\'",
+            "Город.Наименование as \'Наименование\'"}, Hidden=new string[] {
+            "Город.Наименование"})]
+    [MasterViewDefineAttribute("зданиеE", "Город", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Наименование")]
+    [View("зданиеL", new string[] {
+            "Улица as \'Улица\'",
+            "НомерДома as \'Номер дома\'",
+            "КоличествоЭтаж as \'Количество этаж\'",
+            "Город.Наименование as \'Наименование\'"})]
     public class здание : ICSSoft.STORMNET.DataObject
     {
         
@@ -141,7 +154,7 @@ namespace IIS.Test3
         }
         
         /// <summary>
-        /// здание.
+        /// Здание.
         /// </summary>
         // *** Start programmer edit section *** (здание.Город CustomAttributes)
 
@@ -171,6 +184,35 @@ namespace IIS.Test3
                 // *** Start programmer edit section *** (здание.Город Set end)
 
                 // *** End programmer edit section *** (здание.Город Set end)
+            }
+        }
+        
+        /// <summary>
+        /// Class views container.
+        /// </summary>
+        public class Views
+        {
+            
+            /// <summary>
+            /// "зданиеE" view.
+            /// </summary>
+            public static ICSSoft.STORMNET.View зданиеE
+            {
+                get
+                {
+                    return ICSSoft.STORMNET.Information.GetView("зданиеE", typeof(IIS.Test3.здание));
+                }
+            }
+            
+            /// <summary>
+            /// "зданиеL" view.
+            /// </summary>
+            public static ICSSoft.STORMNET.View зданиеL
+            {
+                get
+                {
+                    return ICSSoft.STORMNET.Information.GetView("зданиеL", typeof(IIS.Test3.здание));
+                }
             }
         }
     }

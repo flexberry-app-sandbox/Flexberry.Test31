@@ -28,6 +28,14 @@ namespace IIS.Test3
     // *** End programmer edit section *** (Комната CustomAttributes)
     [AutoAltered()]
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
+    [View("КомнатаE", new string[] {
+            "НомерКомнаты as \'Номер комнаты\'",
+            "Этаж as \'Этаж\'",
+            "Id as \'Id\'"})]
+    [View("КомнатаL", new string[] {
+            "НомерКомнаты as \'Номер комнаты\'",
+            "Этаж as \'Этаж\'",
+            "Id as \'Id\'"})]
     public class Комната : ICSSoft.STORMNET.DataObject
     {
         
@@ -132,6 +140,35 @@ namespace IIS.Test3
                 // *** Start programmer edit section *** (Комната.Этаж Set end)
 
                 // *** End programmer edit section *** (Комната.Этаж Set end)
+            }
+        }
+        
+        /// <summary>
+        /// Class views container.
+        /// </summary>
+        public class Views
+        {
+            
+            /// <summary>
+            /// "КомнатаE" view.
+            /// </summary>
+            public static ICSSoft.STORMNET.View КомнатаE
+            {
+                get
+                {
+                    return ICSSoft.STORMNET.Information.GetView("КомнатаE", typeof(IIS.Test3.Комната));
+                }
+            }
+            
+            /// <summary>
+            /// "КомнатаL" view.
+            /// </summary>
+            public static ICSSoft.STORMNET.View КомнатаL
+            {
+                get
+                {
+                    return ICSSoft.STORMNET.Information.GetView("КомнатаL", typeof(IIS.Test3.Комната));
+                }
             }
         }
     }

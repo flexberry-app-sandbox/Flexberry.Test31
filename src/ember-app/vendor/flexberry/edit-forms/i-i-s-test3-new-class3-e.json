@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "здание",
+      "projection": "зданиеL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "New class3",
+  "name": "IISTest3NewClass3E",
+  "className": "NewClass3E",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-test3-new-class3",
+      "modelProjection": "NewClass3E"
+    }
+  ]
+}

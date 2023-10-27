@@ -1,6 +1,43 @@
 ﻿{
-  "applicationCaption": null,
-  "applicationTitle": null,
-  "items": [],
+  "applicationCaption": "Test3",
+  "applicationTitle": "Test3",
+  "items": [
+    {
+      "link": null,
+      "menuName": "test3",
+      "caption": "Test3",
+      "title": "Test3",
+      "children": [
+        {
+          "link": "i-i-s-test3-new-class3-l",
+          "menuName": null,
+          "caption": "New class3",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-test3-город-l",
+          "menuName": null,
+          "caption": "Город",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-test3-здание-l",
+          "menuName": null,
+          "caption": "Здание",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-test3-комната-l",
+          "menuName": null,
+          "caption": "Комната",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
   "mobile": true
 }

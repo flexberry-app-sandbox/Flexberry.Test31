@@ -21,13 +21,23 @@ namespace IIS.Test3
 
 
     /// <summary>
-    /// NewClass3.
+    /// New class3.
     /// </summary>
     // *** Start programmer edit section *** (NewClass3 CustomAttributes)
 
     // *** End programmer edit section *** (NewClass3 CustomAttributes)
     [AutoAltered()]
+    [Caption("New class3")]
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
+    [View("NewClass3E", new string[] {
+            "Номер as \'Номер\'",
+            "здание as \'Здание\'",
+            "здание.Улица as \'Улица\'"}, Hidden=new string[] {
+            "здание.Улица"})]
+    [MasterViewDefineAttribute("NewClass3E", "здание", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Улица")]
+    [View("NewClass3L", new string[] {
+            "Номер as \'Номер\'",
+            "здание.Улица as \'Улица\'"})]
     public class NewClass3 : ICSSoft.STORMNET.DataObject
     {
         
@@ -72,7 +82,7 @@ namespace IIS.Test3
         }
         
         /// <summary>
-        /// NewClass3.
+        /// New class3.
         /// </summary>
         // *** Start programmer edit section *** (NewClass3.здание CustomAttributes)
 
@@ -102,6 +112,35 @@ namespace IIS.Test3
                 // *** Start programmer edit section *** (NewClass3.здание Set end)
 
                 // *** End programmer edit section *** (NewClass3.здание Set end)
+            }
+        }
+        
+        /// <summary>
+        /// Class views container.
+        /// </summary>
+        public class Views
+        {
+            
+            /// <summary>
+            /// "NewClass3E" view.
+            /// </summary>
+            public static ICSSoft.STORMNET.View NewClass3E
+            {
+                get
+                {
+                    return ICSSoft.STORMNET.Information.GetView("NewClass3E", typeof(IIS.Test3.NewClass3));
+                }
+            }
+            
+            /// <summary>
+            /// "NewClass3L" view.
+            /// </summary>
+            public static ICSSoft.STORMNET.View NewClass3L
+            {
+                get
+                {
+                    return ICSSoft.STORMNET.Information.GetView("NewClass3L", typeof(IIS.Test3.NewClass3));
+                }
             }
         }
     }

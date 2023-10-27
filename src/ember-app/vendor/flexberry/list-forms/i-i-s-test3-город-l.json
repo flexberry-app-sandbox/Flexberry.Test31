@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-test3-город-e",
+  "editForm": "i-i-s-test3-город-e",
+  "external": false,
+  "caption": "Город",
+  "name": "IISTest3ГородL",
+  "className": "ГородL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-test3-город",
+      "modelProjection": "ГородL"
+    }
+  ]
+}

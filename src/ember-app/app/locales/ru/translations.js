@@ -1,6 +1,14 @@
 import $ from 'jquery';
 import EmberFlexberryTranslations from 'ember-flexberry/locales/ru/translations';
 
+import IISTest3NewClass3LForm from './forms/i-i-s-test3-new-class3-l';
+import IISTest3ГородLForm from './forms/i-i-s-test3-город-l';
+import IISTest3зданиеLForm from './forms/i-i-s-test3-здание-l';
+import IISTest3КомнатаLForm from './forms/i-i-s-test3-комната-l';
+import IISTest3NewClass3EForm from './forms/i-i-s-test3-new-class3-e';
+import IISTest3ГородEForm from './forms/i-i-s-test3-город-e';
+import IISTest3зданиеEForm from './forms/i-i-s-test3-здание-e';
+import IISTest3КомнатаEForm from './forms/i-i-s-test3-комната-e';
 import IISTest3NewClass3Model from './models/i-i-s-test3-new-class3';
 import IISTest3ГородModel from './models/i-i-s-test3-город';
 import IISTest3зданиеModel from './models/i-i-s-test3-здание';
@@ -17,7 +25,7 @@ $.extend(true, translations, {
     'i-i-s-test3-комната': IISTest3КомнатаModel
   },
 
-  'application-name': '',
+  'application-name': 'Test3',
 
   forms: {
     loading: {
@@ -56,7 +64,7 @@ $.extend(true, translations, {
       },
 
       footer: {
-        'application-name': '',
+        'application-name': 'Test3',
         'application-version': {
           caption: 'Версия аддона {{version}}',
           title: 'Это версия аддона ember-flexberry, которая сейчас используется в этом тестовом приложении ' +
@@ -67,8 +75,8 @@ $.extend(true, translations, {
 
       sitemap: {
         'application-name': {
-          caption: '',
-          title: ''
+          caption: 'Test3',
+          title: 'Test3'
         },
         'application-version': {
           caption: 'Версия аддона {{version}}',
@@ -80,7 +88,26 @@ $.extend(true, translations, {
           caption: 'Главная',
           title: ''
         },
-
+        test3: {
+          caption: 'Test3',
+          title: 'Test3',
+          'i-i-s-test3-new-class3-l': {
+            caption: 'New class3',
+            title: ''
+          },
+          'i-i-s-test3-город-l': {
+            caption: 'Город',
+            title: ''
+          },
+          'i-i-s-test3-здание-l': {
+            caption: 'Здание',
+            title: ''
+          },
+          'i-i-s-test3-комната-l': {
+            caption: 'Комната',
+            title: ''
+          }
+        }
       }
     },
 
@@ -92,7 +119,14 @@ $.extend(true, translations, {
       'delete-success-message': 'Объект удален',
       'delete-error-message-caption': 'Ошибка удаления'
     },
-
+    'i-i-s-test3-new-class3-l': IISTest3NewClass3LForm,
+    'i-i-s-test3-город-l': IISTest3ГородLForm,
+    'i-i-s-test3-здание-l': IISTest3зданиеLForm,
+    'i-i-s-test3-комната-l': IISTest3КомнатаLForm,
+    'i-i-s-test3-new-class3-e': IISTest3NewClass3EForm,
+    'i-i-s-test3-город-e': IISTest3ГородEForm,
+    'i-i-s-test3-здание-e': IISTest3зданиеEForm,
+    'i-i-s-test3-комната-e': IISTest3КомнатаEForm
   },
 
 });

@@ -19,7 +19,36 @@ export default Controller.extend({
           caption: i18n.t('forms.application.sitemap.index.caption'),
           title: i18n.t('forms.application.sitemap.index.title'),
           children: null
-        }, 
+        }, {
+          link: null,
+          icon: 'list',
+          caption: i18n.t('forms.application.sitemap.test3.caption'),
+          title: i18n.t('forms.application.sitemap.test3.title'),
+          children: [{
+            link: 'i-i-s-test3-new-class3-l',
+            caption: i18n.t('forms.application.sitemap.test3.i-i-s-test3-new-class3-l.caption'),
+            title: i18n.t('forms.application.sitemap.test3.i-i-s-test3-new-class3-l.title'),
+            icon: 'folder',
+            children: null
+          }, {
+            link: 'i-i-s-test3-город-l',
+            caption: i18n.t('forms.application.sitemap.test3.i-i-s-test3-город-l.caption'),
+            title: i18n.t('forms.application.sitemap.test3.i-i-s-test3-город-l.title'),
+            icon: 'table',
+            children: null
+          }, {
+            link: 'i-i-s-test3-здание-l',
+            caption: i18n.t('forms.application.sitemap.test3.i-i-s-test3-здание-l.caption'),
+            title: i18n.t('forms.application.sitemap.test3.i-i-s-test3-здание-l.title'),
+            children: null
+          }, {
+            link: 'i-i-s-test3-комната-l',
+            caption: i18n.t('forms.application.sitemap.test3.i-i-s-test3-комната-l.caption'),
+            title: i18n.t('forms.application.sitemap.test3.i-i-s-test3-комната-l.title'),
+            icon: 'chart bar',
+            children: null
+          }]
+        }
       ]
     };
   }),

@@ -26,7 +26,80 @@
     }
   ],
   "hasMany": [],
-  "projections": [],
+  "projections": [
+    {
+      "name": "NewClass3E",
+      "modelName": "i-i-s-test3-new-class3",
+      "attrs": [
+        {
+          "name": "номер",
+          "caption": "Номер",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Улица",
+          "lookupValueField": "улица",
+          "relationName": "здание",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "улица",
+              "caption": "Улица",
+              "hidden": true,
+              "index": 2
+            }
+          ],
+          "index": 1,
+          "type": "standard",
+          "caption": "Здание",
+          "name": "здание",
+          "relatedTo": "i-i-s-test3-здание",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "NewClass3L",
+      "modelName": "i-i-s-test3-new-class3",
+      "attrs": [
+        {
+          "name": "номер",
+          "caption": "Номер",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "здание",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "улица",
+              "caption": "Улица",
+              "hidden": false,
+              "index": 1
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Улица",
+          "name": "здание",
+          "relatedTo": "i-i-s-test3-здание",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
   "stored": true,
   "offline": true,
   "external": false

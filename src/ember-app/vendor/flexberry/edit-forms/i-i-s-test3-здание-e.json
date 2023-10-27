@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Город",
+      "projection": "ГородL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Здание",
+  "name": "IISTest3зданиеE",
+  "className": "зданиеE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-test3-здание",
+      "modelProjection": "зданиеE"
+    }
+  ]
+}

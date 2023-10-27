@@ -28,6 +28,12 @@ namespace IIS.Test3
     // *** End programmer edit section *** (Город CustomAttributes)
     [AutoAltered()]
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
+    [View("ГородE", new string[] {
+            "Площадь as \'Площадь\'",
+            "Наименование as \'Наименование\'"})]
+    [View("ГородL", new string[] {
+            "Площадь as \'Площадь\'",
+            "Наименование as \'Наименование\'"})]
     public class Город : ICSSoft.STORMNET.DataObject
     {
         
@@ -100,6 +106,35 @@ namespace IIS.Test3
                 // *** Start programmer edit section *** (Город.Площадь Set end)
 
                 // *** End programmer edit section *** (Город.Площадь Set end)
+            }
+        }
+        
+        /// <summary>
+        /// Class views container.
+        /// </summary>
+        public class Views
+        {
+            
+            /// <summary>
+            /// "ГородE" view.
+            /// </summary>
+            public static ICSSoft.STORMNET.View ГородE
+            {
+                get
+                {
+                    return ICSSoft.STORMNET.Information.GetView("ГородE", typeof(IIS.Test3.Город));
+                }
+            }
+            
+            /// <summary>
+            /// "ГородL" view.
+            /// </summary>
+            public static ICSSoft.STORMNET.View ГородL
+            {
+                get
+                {
+                    return ICSSoft.STORMNET.Information.GetView("ГородL", typeof(IIS.Test3.Город));
+                }
             }
         }
     }
