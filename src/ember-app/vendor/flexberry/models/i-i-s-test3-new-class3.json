@@ -1,0 +1,33 @@
+﻿{
+  "name": "IISTest3NewClass3",
+  "modelName": "i-i-s-test3-new-class3",
+  "className": "NewClass3",
+  "nameSpace": "IIS.Test3",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "номер",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "здание",
+      "relatedTo": "i-i-s-test3-здание",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [],
+  "stored": true,
+  "offline": true,
+  "external": false
+}
