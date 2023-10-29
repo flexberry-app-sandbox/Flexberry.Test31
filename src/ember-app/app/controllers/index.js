@@ -22,25 +22,25 @@ export default Controller.extend({
             link: 'i-i-s-test3-new-class3-l',
             caption: i18n.t('forms.application.sitemap.test3.i-i-s-test3-new-class3-l.caption'),
             title: i18n.t('forms.application.sitemap.test3.i-i-s-test3-new-class3-l.title'),
-            icon: 'edit',
+            icon: 'paperclip',
             children: null
           }, {
             link: 'i-i-s-test3-город-l',
             caption: i18n.t('forms.application.sitemap.test3.i-i-s-test3-город-l.caption'),
             title: i18n.t('forms.application.sitemap.test3.i-i-s-test3-город-l.title'),
-            icon: 'chart line',
+            icon: 'phone',
             children: null
           }, {
             link: 'i-i-s-test3-здание-l',
             caption: i18n.t('forms.application.sitemap.test3.i-i-s-test3-здание-l.caption'),
             title: i18n.t('forms.application.sitemap.test3.i-i-s-test3-здание-l.title'),
-            icon: 'phone',
+            icon: 'address card',
             children: null
           }, {
             link: 'i-i-s-test3-комната-l',
             caption: i18n.t('forms.application.sitemap.test3.i-i-s-test3-комната-l.caption'),
             title: i18n.t('forms.application.sitemap.test3.i-i-s-test3-комната-l.title'),
-            icon: 'suitcase',
+            icon: 'chart bar',
             children: null
           }]
         }
